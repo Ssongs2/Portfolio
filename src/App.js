@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main />}></Route>
+        <Route path="/Portfolio" element={<Main />}></Route>
       </Routes>
     </BrowserRouter>
     // <div className="App">
