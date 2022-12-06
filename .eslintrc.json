@@ -1,0 +1,7 @@
+{
+    "parser": "@babel/eslint-parser",
+    "extends": [
+        "plugin:react/recommended"
+    ],
+    "requireConfigFile": "false"
+}

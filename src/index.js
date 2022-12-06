@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from 'react-router-dom';
+import './assets/styles/_common.scss';
+import './assets/styles/_main.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
