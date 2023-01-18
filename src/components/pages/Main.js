@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Main extends Component {
     render() {
         return (
-            <div className="container" style={{ margin: "20px", height: "inherit" }} >
+            <div className="container" style={{ padding: "20px" }} >
                 <div className="top" style={{ display: "flex", justifyContent: "space-between", height: "60%" }}>
                     <div className="inner right" style={{ fontFamily: '"Monument Grotesk Mono Variable", Icons', fontStyle: 'normal', fontWeight: 700, padding: 0, margin: 0, fontSize: '8rem', lineHeight: 1, color: 'rgba(255, 255, 255, 1)', fontVariationSettings: '"slnt" 0, "MONO" 1' }}>
                         SongEunJi&apos;s
@@ -16,6 +16,7 @@ class Main extends Component {
                             <a className="order" href="#">2</a>
                             <a className="order" href="#">3</a>
                             <a className="order" href="#">4</a>
+                            <a className="order" href="#">5</a>
                         </div>
                     </div>
                 </div>
@@ -23,7 +24,6 @@ class Main extends Component {
                     <div style={{
                         color: "white", fontSize: "1.4rem",
                         fontWeight: "700",
-                        color: "rgba(255, 255, 255, 1)",
                         fontFamily: '"Diatype Variable", Icons',
                         fontStyle: "normal",
                         lineHeight: "1.2",
