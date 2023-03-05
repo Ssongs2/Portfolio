@@ -1,7 +1,514 @@
-a.order {
+.section.main {
+    padding-top: 80px;
+    background-color: #DADADA;
+    height: 90vh;
+}
+
+.section.main .container {
+    text-align: center;
+    height: 60%;
+    padding: 10rem 0;
+}
+
+.section.main .container .main-heading {
+    font-size: 7rem;
+    font-weight: 600;
     color: white;
 }
 
-a.order:hover {
-    color: blue; 
+
+.section.skill {
+    background-color: #BFBFBF;
+    height: 80vh;
+    position: relative;
+}
+
+// ============== About Me ==============
+
+/* 커스텀 커서 스타일 정의해주기 */
+// .cursor {
+//     width: 3rem;
+//     height: 3rem;
+//     border: 2px solid var(--color-texta);
+//     border-radius: 50%;
+//     position: absolute;
+//     z-index: 1000;
+//     opacity: 1;
+//     transform: translate(-50%, -50%); // move the element in the centre
+//     pointer-events: none; //so that this element dosen't become a target of pointer-events
+//     transition: all 0.3s ease;
+//     transition-property: background, transform;
+//     transform-origin: 100% 100%;
+//     backdrop-filter: sepia(20%);
+//     background-size: cover;
+// }
+
+.movable {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--color-texta);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999999999;
+    opacity: 1;
+    pointer-events: none; //so that this element dosen't become a target of pointer-events
+    // transition: background 0.5s;
+    transform: translate(-50%, -50%); // move the element in the centre 
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    backdrop-filter: sepia(20%);
+    background-size: cover;
+}
+
+.movable.grow {
+    transform: scale(2);
+}
+
+.movable.active {
+    background: red;
+}
+
+.movable.active:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.movable.cursor-pointer:after {
+    content: "!";
+}
+
+.movable.cursor-right:after {
+    content: ">";
+}
+
+.movable.cursor-left:after {
+    content: "<";
+}
+
+.section.aboutMe {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    cursor: none;
+}
+
+.section.aboutMe .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+
+.section.aboutMe .rgt {
+    background-color: #BFBFBF;
+    width: 50%;
+    height: inherit;
+}
+
+.section.aboutMe .rgt .container {
+    text-align: right;
+}
+
+.section.aboutMe .rgt .aboutMe_intro {
+    padding-right: 10px;
+}
+
+.section.aboutMe .lft {
+    background-color: #EFEEEC;
+    width: 50%;
+    height: inherit;
+}
+
+.section.aboutMe .lft .aboutMe_intro {
+    padding-left: 10px;
+}
+
+.section.aboutMe .container .aboutMe_intro {
+    font-family: Chosunilbo_myungjo;
+    font-size: 1.6rem;
+    line-height: 25px;
+}
+
+.section.aboutMe .container .aboutMe_intro.true {
+    font-weight: bold;
+}
+
+
+
+
+
+
+// ============== CARRER ============== 
+.section.carrer {
+    padding: 150px 0;
+    background-color: #DADADA;
+}
+
+
+.carrer-heading::before {
+    counter-increment: section 2;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: var(--blue);
+    font-family: var(--font-robo);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.carrer-heading {
+    display: flex;
+    align-items: center;
+    // -webkit-box-align: center;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-family: var(--font-robo);
+    font-size: 2rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.carrer-heading::after {
+    content: "";
+    position: relative;
+    top: 1px;
+    width: 300px;
+    height: 2px;
+    margin-left: 20px;
+    background-color: var(--blue);
+}
+
+// 고민
+.section.carrer .container {
+    width: 45%;
+    height: 90vh;
+    margin: 0 auto;
+}
+
+.section.carrer .container .content .job {
+    display: flex;
+    flex-direction: column;
+}
+
+.section.carrer .container .content .job .jobs__styledButton {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    transition: var(--transition); // animation
+    // -webkit-box-align: center; 
+    width: 100%;
+    height: var(--tab-height);
+    padding: 0px 20px 2px;
+    border-left: 2px solid var(--light-slate);
+    background-color: transparent;
+    font-size: var(--fz-xs);
+}
+
+.section.carrer .container .content .job .jobs__styledButton.active {
+    border-left: 2px solid var(--blue);
+}
+
+// .jBtS {
+//     border-left: 2px solid var(--blue);
+// }
+
+// .jBtU {
+//     border-left: 2px solid var(--light-slate);
+// }
+
+.section.carrer .container .content .job .jobs__styledButton:hover {
+    background-color: var(--light-slate)
+}
+
+.section.carrer .content .job-detail .jobs__styledTabPanel {
+    display: none;
+}
+
+.section.carrer .content .job-detail .jobs__styledTabPanel.active {
+    display: block;
+}
+
+.section.carrer .content {
+    display: flex;
+}
+
+.section.carrer .content .job-detail {
+    padding: 3px 15px;
+    width: 80%;
+}
+
+.section.carrer .content .job-detail h3 {
+    margin-bottom: 2px;
+    color: #000000;
+    font-family: var(--font-robo);
+    font-size: var(--fz-xxl);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.section.carrer .content .job-detail p {
+    margin-bottom: 25px;
+    color: #000000;
+    font-family: var(--font-robo);
+    font-size: var(--fz-xs);
+}
+
+.section.carrer .content .job-detail div ul li::Before {
+    content: "▹";
+    color: var(--blue);
+}
+
+.section.carrer .content .job-detail div ul li {
+    margin-bottom: 20px;
+    line-height: 20px;
+    font-family: ChosunSg;
+    font-size: var(--fz-md);
+}
+
+.section.carrer .content .job-detail .inline_link {
+    transition: var(--transition);
+    color: var(--blue);
+}
+
+// ============== Proejct ============== 
+.section.project .container .horizontal_scroll {
+    width: 1000vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EFEEEC;
+}
+
+.section.project .container .horizontal_scroll .panel {
+    width: 100vw;
+    height: 100vh;
+}
+
+.section.project .container .horizontal_scroll .panel .content {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section.project .container .horizontal_scroll .panel .content .img {
+    width: 50%;
+    height: 80vh;
+}
+
+.section.project .container .horizontal_scroll .panel .content .img .num {
+    position: absolute;
+    z-index: 9999;
+    font-size: 9.7vw;
+    font-family: var(--font-mont);
+    font-weight: 700;
+    color: #ebebeb;
+    text-shadow: -1px 0 #868686, 0 1px #868686, 1px 0 #868686, 0 -1px #868686;
+}
+
+.section.project .container .horizontal_scroll .panel .content .img img {
+    width: 90%;
+    object-fit: contain;
+}
+
+.section.project .container .horizontal_scroll .panel .content .txt {
+    width: 40%;
+    height: 80vh;
+}
+
+.section.project .container .horizontal_scroll .panel .content .txt h3 {
+    font-family: var(--font-mont);
+    font-size: 4.1vw;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -0.04rem;
+    line-height: 1.2;
+}
+
+.section.project .container .horizontal_scroll .panel .content .txt p.sub {
+    font-family: 'Chosunilbo_myungjo';
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    padding-bottom: 2rem;
+    word-break: break-word;
+}
+
+.section.project .container .horizontal_scroll .panel .content .txt .text {
+    font-family: 'Chosunilbo_myungjo';
+    font-size: 1.3rem;
+    line-height: 1.7;
+    padding-bottom: 2rem;
+    word-break: break-word;
+}
+
+// slideshow
+
+.slideshow_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 90%;
+    max-width: 1000px;
+}
+
+.slideshow_container .mySlides {
+    display: none;
+    text-align: center;
+}
+
+.slideshow_container .prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    // padding: 24px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.slideshow_container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.dot_container {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+// effect
+
+.dot:hover {
+    background-color: #717171;
+}
+
+.slideshow_container .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+// ============== Responsible ============== 
+// 어느 시점에 변경되는 포인트를 잡으면 될 거 같음.
+@media (max-width:1020px) {
+    .carrer-heading::before {
+        font-size: 1.6rem;
+    }
+
+    .carrer-heading {
+        font-size: 1.6rem;
+    }
+
+    .carrer-heading::after {
+        width: 200px;
+    }
+
+    .section.carrer .content {
+        flex-direction: column;
+    }
+
+    .section.carrer .container {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .section.carrer .container .content .job .jobs__styledButton {
+        border-left: none;
+        border-bottom: 2px solid var(--light-slate);
+    }
+
+    .section.carrer .container .content .job {
+        flex-direction: row;
+    }
+
+    .section.carrer .content .job-detail {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    .section.carrer .content .job-detail h3 {
+        font-size: var(--fz-xl);
+    }
+
+    .section.project .container .horizontal_scroll .panel .content .img {
+        width: 90%;
+        height: 50vh;
+    }
+
+    .section.project .container .horizontal_scroll .panel .content .txt {
+        width: 90%;
+        height: 50vh;
+    }
+
+    .section.project .container .horizontal_scroll .panel .content .txt h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .section.project .container .horizontal_scroll .panel .content .txt p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .section.project .container .horizontal_scroll .panel .content .txt p.sub {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0rem;
+        line-height: 1.5;
+    }
+
+}
+
+@media (max-width:1020px) and (min-width: 650px) {
+
+    .section.project .container .horizontal_scroll .panel .content {
+        flex-direction: row;
+    }
+
+    .section.project .container .horizontal_scroll .panel .content .img {
+        width: 70%;
+        height: 50vh;
+    }
+
+    .section.project .container .horizontal_scroll .panel .content .txt {
+        width: 70%;
+        height: 50vh;
+    }
+}
+
+
+@media (max-width:650px) {
+
+    .section.aboutMe .container .aboutMe_intro {
+        font-size: 1.2rem;
+    }
+
+    .section.carrer .container {
+        width: 80%;
+    }
+
+    .section.project .container .horizontal_scroll .panel .content {
+        flex-direction: column;
+    }
 }

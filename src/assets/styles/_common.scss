@@ -87,6 +87,11 @@ video {
     vertical-align: baseline;
 }
 
+body {
+    // temp
+    overflow-x: hidden;
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -133,10 +138,101 @@ table {
     border-spacing: 0;
 }
 
-body {
-    background-color: black;
+// body {
+//     background-color: black;
+// }
+
+
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-a {
-    text-decoration-line: none;
+@font-face {
+    font-family: 'ChosunSg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunSg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --fz--heading: 32px;
+    --fz-xs: 13px;
+    --fz-md: 16px;
+    --fz-xl: 18px;
+    --fz-xxl: 22px;
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --tab-height: 42px;
+    --lightest-navy: #233554;
+    --light-slate: #a8b2d1;
+    --green: #64ffda;
+    --blue: #5A6FA8;
+    --font-robo: 'Roboto', sans-serif;
+    --font-mont: 'Montserrat', sans-serif;
+
+}
+
+// btn css
+button {
+    cursor: pointer;
+    border: 0px;
+}
+
+a.button_gradient {
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.21);
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    margin-right: 10px;
+}
+
+a.button_gradient:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+
+a.button_gradient {
+    background: #ebebeb;
+    border: 1px solid #868686;
+    z-index: 1;
+}
+
+a.button_gradient:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #000;
+    background-image: linear-gradient(315deg, #868686 0%, #f6fc9c 74%);
+    transition: all 0.3s ease;
+}
+
+a.button_gradient:hover {
+    color: #000;
+}
+
+a.button_gradient:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+
+
+
+@media (max-width:880px) {
+    a.button_gradient {
+        padding: 5px 15px;
+    }
 }
