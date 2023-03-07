@@ -23,6 +23,41 @@
     position: relative;
 }
 
+.section.skill .imgWrapper {
+    position: absolute;
+}
+
+.section.skill .imgWrapper#a1 {
+    top: 24%;
+}
+
+.section.skill .imgWrapper#a2 {
+    top: 30%;
+    left: 50%;
+}
+
+.section.skill .imgWrapper#a3 {
+    top: 50%;
+    left: 70%;
+}
+
+.section.skill .imgWrapper#a4 {
+    top: 20%;
+    left: 35%;
+}
+
+.section.skill .imgWrapper .apple {
+    width: 15rem;
+}
+
+.section.skill .imgWrapper.bowl {
+    width: 35rem;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -0%),
+}
+
 // ============== About Me ==============
 
 /* 커스텀 커서 스타일 정의해주기 */
@@ -76,18 +111,6 @@
     transform: translate(-50%, -50%);
 }
 
-.movable.cursor-pointer:after {
-    content: "!";
-}
-
-.movable.cursor-right:after {
-    content: ">";
-}
-
-.movable.cursor-left:after {
-    content: "<";
-}
-
 .section.aboutMe {
     display: flex;
     height: 90vh;
@@ -98,33 +121,21 @@
 .section.aboutMe .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     height: inherit;
-}
-
-.section.aboutMe .rgt {
     background-color: #BFBFBF;
-    width: 50%;
-    height: inherit;
 }
 
-.section.aboutMe .rgt .container {
-    text-align: right;
+.section.aboutMe .container p {
+    font-family: Chosunilbo_myungjo;
+    font-size: 1.6rem;
+    line-height: 30px;
+    text-align: end;
 }
 
-.section.aboutMe .rgt .aboutMe_intro {
-    padding-right: 10px;
-}
-
-.section.aboutMe .lft {
-    background-color: #EFEEEC;
-    width: 50%;
-    height: inherit;
-}
-
-.section.aboutMe .lft .aboutMe_intro {
-    padding-left: 10px;
+.section.aboutMe .container p.lft {
+    text-align: left;
 }
 
 .section.aboutMe .container .aboutMe_intro {
@@ -133,14 +144,14 @@
     line-height: 25px;
 }
 
-.section.aboutMe .container .aboutMe_intro.true {
+.section.aboutMe .container .rgt.rgtActive {
     font-weight: bold;
 }
 
 
-
-
-
+.section.aboutMe .container .lft.lftActive {
+    font-weight: bold;
+}
 
 // ============== CARRER ============== 
 .section.carrer {
@@ -510,5 +521,37 @@
 
     .section.project .container .horizontal_scroll .panel .content {
         flex-direction: column;
+    }
+
+    .section.aboutMe .container p {
+        font-size: 1.3rem
+    }
+
+    .section.skill .imgWrapper .apple {
+        width: 8rem;
+    }
+
+    // .section.skill .imgWrapper#a1 {
+    //     top: 10%;
+    // }
+
+    .section.skill .imgWrapper#a2 {
+        top: 50%;
+        left: 50%;
+    }
+
+    .section.skill .imgWrapper#a3 {
+        top: 70%;
+        left: 70%;
+    }
+
+    .section.skill .imgWrapper#a4 {
+        top: 55%;
+        left: 25%;
+    }
+
+    .section.skill .imgWrapper.bowl {
+        width: 25rem;
+        transform: translate(-50%, 50%),
     }
 }
