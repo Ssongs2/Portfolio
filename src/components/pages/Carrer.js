@@ -19,6 +19,7 @@ function Carrer() {
 
     return (
         <section className='section carrer'>
+            <a name="carrer"></a>
             <div className='container'>
                 <h2 className='carrer-heading'>Where I've worked</h2>
                 <div className='content'>

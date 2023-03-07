@@ -5,6 +5,7 @@ import apple from '../../assets/resources/apple.png'
 function Skill() {
     return (
         <section className='section skill'>
+            <a name="skills"></a>
             <div className="imgWrapper" id="a1" style={{ "width": "100%" }}>
                 <img className="apple" style={{ "maxWidth": "100%", "height": "auto" }} src={apple} alt=''></img>
             </div>

@@ -19,7 +19,7 @@
 
 .section.skill {
     background-color: #BFBFBF;
-    height: 80vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -147,7 +147,6 @@
 .section.aboutMe .container .rgt.rgtActive {
     font-weight: bold;
 }
-
 
 .section.aboutMe .container .lft.lftActive {
     font-weight: bold;
@@ -530,10 +529,6 @@
     .section.skill .imgWrapper .apple {
         width: 8rem;
     }
-
-    // .section.skill .imgWrapper#a1 {
-    //     top: 10%;
-    // }
 
     .section.skill .imgWrapper#a2 {
         top: 50%;
