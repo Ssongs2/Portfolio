@@ -16,46 +16,78 @@
     color: white;
 }
 
+// ============== Skill ============== 
 
 .section.skill {
-    background-color: #BFBFBF;
-    height: 100vh;
-    position: relative;
+    background-color: #DADADA;
+    height: 90vh;
+    padding: 10px
 }
 
-.section.skill .imgWrapper {
-    position: absolute;
+.section.skill .container {
+    display: flex;
+    align-items: center;
+    height: inherit;
 }
 
-.section.skill .imgWrapper#a1 {
-    top: 24%;
+.section.skill .container .content {
+    width: 100%;
 }
 
-.section.skill .imgWrapper#a2 {
-    top: 30%;
-    left: 50%;
+.section.skill .container .content table {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
 }
 
-.section.skill .imgWrapper#a3 {
-    top: 50%;
-    left: 70%;
+.section.skill .container .content table tr td h2 {
+    display: inline-flex;
+    align-items: center;
+    color: #000000;
+    font-family: var(--font-robo);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
 }
 
-.section.skill .imgWrapper#a4 {
-    top: 20%;
-    left: 35%;
+.section.skill .container .content table tr td p {
+    padding-left: 64px;
+    line-height: 25px;
 }
 
-.section.skill .imgWrapper .apple {
-    width: 15rem;
+.skill-heading {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 9.7vw;
+    font-family: var(--font-mont);
+    font-weight: 700;
+    color: #ebebeb;
+    text-shadow: -1px 0 #5A6FA8, 0 1px #5A6FA8, 1px 0 #5A6FA8, 0 -1px #5A6FA8;
 }
 
-.section.skill .imgWrapper.bowl {
-    width: 35rem;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -0%),
+td h2::before {
+    content: '';
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #149ddd;
+    margin-right: 10px;
+}
+
+.icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    background: #149ddd;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 1px solid #149ddd;
 }
 
 // ============== About Me ==============
@@ -113,7 +145,7 @@
 
 .section.aboutMe {
     display: flex;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     cursor: none;
 }
@@ -124,13 +156,14 @@
     justify-content: space-evenly;
     width: 100%;
     height: inherit;
+    padding: 0px 10px;
     background-color: #BFBFBF;
 }
 
 .section.aboutMe .container p {
     font-family: Chosunilbo_myungjo;
-    font-size: 1.6rem;
-    line-height: 30px;
+    font-size: 1.8rem;
+    line-height: 35px;
     text-align: end;
 }
 
@@ -157,7 +190,6 @@
     padding: 150px 0;
     background-color: #DADADA;
 }
-
 
 .carrer-heading::before {
     counter-increment: section 2;
@@ -194,7 +226,6 @@
 // 고민
 .section.carrer .container {
     width: 45%;
-    height: 90vh;
     margin: 0 auto;
 }
 
@@ -220,14 +251,6 @@
 .section.carrer .container .content .job .jobs__styledButton.active {
     border-left: 2px solid var(--blue);
 }
-
-// .jBtS {
-//     border-left: 2px solid var(--blue);
-// }
-
-// .jBtU {
-//     border-left: 2px solid var(--light-slate);
-// }
 
 .section.carrer .container .content .job .jobs__styledButton:hover {
     background-color: var(--light-slate)
@@ -283,9 +306,16 @@
     color: var(--blue);
 }
 
+// .section.skill {
+//     padding: 150px 0;
+//     background-color: #DADADA;
+// }
+
+
+
 // ============== Proejct ============== 
 .section.project .container .horizontal_scroll {
-    width: 1000vw;
+    width: 500vw;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -523,30 +553,12 @@
     }
 
     .section.aboutMe .container p {
-        font-size: 1.3rem
+        font-size: 1.3rem;
+        line-height: 30px;
     }
 
-    .section.skill .imgWrapper .apple {
-        width: 8rem;
+    .section.skill .container .content table tr td h2 {
+        font-size: 1.2rem;
     }
 
-    .section.skill .imgWrapper#a2 {
-        top: 50%;
-        left: 50%;
-    }
-
-    .section.skill .imgWrapper#a3 {
-        top: 70%;
-        left: 70%;
-    }
-
-    .section.skill .imgWrapper#a4 {
-        top: 55%;
-        left: 25%;
-    }
-
-    .section.skill .imgWrapper.bowl {
-        width: 25rem;
-        transform: translate(-50%, 50%),
-    }
 }

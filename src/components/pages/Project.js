@@ -92,8 +92,8 @@ const Project = () => {
                                         라우터, 페이징, 자연스러운 화면전환이 가능합니다. */}
                                     </p>
                                     {/* href -> git 서버에 올린 후 변경 필요 */}
-                                    <a href="https://github.com/Ssongs2/HWC_Javascript" rel="noreferrer" target="_blank" data-text="JavaScript" className='button_gradient'>JavaScript</a>
-                                    <a href="https://github.com/Ssongs2/HWC_Typescript" rel="noreferrer" target="_blank" data-text="TypeScript" className='button_gradient'>TypeScript</a>
+                                    <a href="https://github.com/Ssongs2/HNC_Javascript" rel="noreferrer" target="_blank" data-text="JavaScript" className='button_gradient'>JavaScript</a>
+                                    <a href="https://github.com/Ssongs2/HNC_Typerscript" rel="noreferrer" target="_blank" data-text="TypeScript" className='button_gradient'>TypeScript</a>
                                 </div>
                             </div>
                         </div>
