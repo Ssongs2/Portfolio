@@ -14,10 +14,19 @@
 
 .header_module_container {
     float: right;
+    height: inherit;
 }
 
 .header_module_container .navbar {
     padding-right: 1em;
+    height: inherit;
+}
+
+.header_module_container .navbar .menu {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 48px;
+    height: inherit;
 }
 
 .header_module_container .navbar .menu .menu_item {

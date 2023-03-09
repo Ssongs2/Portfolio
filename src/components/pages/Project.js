@@ -63,8 +63,7 @@ const Project = () => {
     });
 
     return (
-        <section className='section project' ref={sliderRef}>
-            <a name="project"></a>
+        <section className='section project' ref={sliderRef} id="project">
             <div className='container'>
                 <div className='horizontal_scroll'>
                     <div className='panel 01'>

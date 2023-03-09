@@ -2,8 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <footer className="footer_module">
-            <a name="contact" href="/" />
+        <footer className="footer_module" id="contact">
             <div className="footer_module_container">
                 <span className='copyright'>
                     @2023 SongEunJi

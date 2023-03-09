@@ -15,8 +15,7 @@ function Carrer() {
     }
 
     return (
-        <section className='section carrer'>
-            <a name="carrer"></a>
+        <section className='section carrer' id="carrer">
             <div className='container'>
                 <h2 className='carrer-heading'>Where I've worked</h2>
                 <div className='content'>

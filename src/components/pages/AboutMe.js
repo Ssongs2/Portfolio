@@ -5,8 +5,7 @@ const AboutMe = (props) => {
     const { cursor, onCursor } = props.context;
 
     return (
-        <section className="section aboutMe">
-            <a name="aboutMe"></a>
+        <section className="section aboutMe" id="aboutMe">
             <div className='container'>
                 <p className={`rgt ${cursor}`} onMouseOver={() => onCursor("rgtActive")} onMouseLeave={() => onCursor(false)}>
                     Hello. I'm Anne. A Full-Stack Developer Based in Seoul, South Korea <br />

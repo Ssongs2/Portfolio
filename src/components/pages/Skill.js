@@ -1,10 +1,8 @@
 import React from 'react';
-import bowl from '../../assets/resources/bowl44.svg'
-import apple from '../../assets/resources/apple.png'
 
 function Skill() {
     return (
-        <section className='section skill'>
+        <section className='section skill' id="skill">
             <div className="container">
                 <h2 className='skill-heading'>Skill</h2>
                 <div className='content'>

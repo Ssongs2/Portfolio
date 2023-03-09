@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 function Header() {
     return (
@@ -7,23 +8,34 @@ function Header() {
                 <nav className='navbar'>
                     <ul className='menu'>
                         <li className="menu_item">
-                            <a href="#aboutMe"><span className='menu_name'>About Me</span></a>
+                            <Link to="aboutMe" spy={true} smooth={true}>
+                                <span className='menu_name'>About Me</span>
+                            </Link>
                         </li>
 
                         <li className="menu_item">
-                            <a href="#carrer"><span className='menu_name'>Carrer</span></a>
+                            <Link to="carrer" spy={true} smooth={true}>
+                                <span className='menu_name'>Carrer</span>
+                            </Link>
                         </li>
 
                         <li className="menu_item">
-                            <a href="#skills"><span className='menu_name'>Skills</span></a>
+                            <Link to="skill" spy={true} smooth={true}>
+                                <span className='menu_name'>Skills</span>
+                            </Link>
                         </li>
 
                         <li className="menu_item">
-                            <a href="#project"><span className='menu_name'>Project</span></a>
+                            <Link to="project" spy={true} smooth={true}>
+                                <span className='menu_name'>Project</span>
+                            </Link>
                         </li>
 
                         <li className="menu_item">
-                            <a href="#contact"><span className='menu_name'>Contact</span></a>
+
+                            <Link to="contact" spy={true} smooth={true}>
+                                <span className='menu_name'>Contact</span>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
