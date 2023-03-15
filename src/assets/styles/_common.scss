@@ -87,9 +87,17 @@ video {
     vertical-align: baseline;
 }
 
+html {
+    overflow-y: scroll;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
 body {
     // temp
     overflow-x: hidden;
+    overflow-y: visible;
+    position: relative;
 }
 
 /* HTML5 display-role reset for older browsers */

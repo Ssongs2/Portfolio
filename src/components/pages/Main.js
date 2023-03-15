@@ -1,4 +1,4 @@
-import React, { Component, useRef } from 'react';
+import React, { Component } from 'react';
 import CursorProvider from '../providers/CursorProvider';
 import Header from '../Header';
 import Footer from '../Footer';
@@ -6,6 +6,7 @@ import AboutMe from './AboutMe';
 import Skill from './Skill';
 import Carrer from './Carrer';
 import Project from './Project';
+import Navbar from '../view/Navbar';
 
 /**  
  * Function Component
@@ -45,6 +46,7 @@ class Main extends Component {
                 <Header />
                 <CursorProvider>
                     <section className='section main'>
+                        <Navbar />
                         <div className='container'>
                             <h1 className='main-heading'>
                                 PORTFOLIO

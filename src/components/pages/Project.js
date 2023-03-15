@@ -69,7 +69,7 @@ const Project = () => {
                     <div className='panel 01'>
                         <div className='content'>
                             <div className='img'>
-                                <span class='num'>01</span>
+                                <span className='num'>01</span>
                                 <img alt=''></img>
                             </div>
                             <div className='txt'>

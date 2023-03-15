@@ -21,7 +21,7 @@ function Carrer() {
                 <div className='content'>
                     <div className="job" role="tablist">
                         <button id="tab-0" role="tab" tabIndex={0} aria-selected="true" aria-controls="panel-0" className="jobs__styledButton jBtU active" onClick={handleClickJobs}>Comwel</button>
-                        <button id="tab-1" role="tab" tabIndex={-1} aria-selected="false" aria-controls="panel-1" className="jobs__styledButton jBtS" onClick={handleClickJobs}><span>Douzone</span></button>
+                        <button id="tab-1" role="tab" tabIndex={-1} aria-selected="false" aria-controls="panel-1" className="jobs__styledButton jBtS" onClick={handleClickJobs}>Douzone</button>
                     </div>
                     <div className='job-detail'>
                         <div id='panel-0' role="tabpanel" tabIndex="0" aria-labelledby='tab-0' aria-hidden="false" className="jobs__styledTabPanel active">

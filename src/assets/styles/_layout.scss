@@ -30,6 +30,7 @@
 }
 
 .header_module_container .navbar .menu .menu_item {
+    cursor: pointer;
     display: table-cell;
     vertical-align: middle;
     line-height: 48px;
@@ -55,6 +56,34 @@
 
 .header_module_container .menu .menu_item .menu_name:hover {
     color: #000000;
+}
+
+.mobile_navbar {
+    display: none;
+}
+
+.section.main .navbar {
+    display: none;
+}
+
+.mobile_navbar_btn {
+    background-color: #DADADA;
+}
+
+.mobile_navbar_content .navbar ul li.menu_item {
+    border-bottom: 1px solid white;
+    color: gray;
+    padding: 10px;
+}
+
+.section.main .navbar .menu .menu_item {
+    padding: 10px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.section.main .navbar .menu .menu_item span {
+    color: gray;
 }
 
 // footer section
@@ -90,12 +119,27 @@
 }
 
 //@at-root
-@media (max-width:500px) {
+@media (max-width:600px) {
+
+    .mobile_navbar {
+        display: flex;
+        height: 79px;
+    }
+
+    .section.main .navbar {
+        display: none;
+    }
+
+    .header_module_container .navbar {
+        display: none;
+    }
+
     .header_module_container .navbar .menu .menu_item .menu_name {
         font-size: 1.1rem;
     }
 
     .section.main .container .main-heading {
-        font-size: 5rem;
+        font-size: 4rem;
+        font-weight: 550;
     }
 }
