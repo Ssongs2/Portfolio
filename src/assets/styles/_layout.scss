@@ -1,13 +1,11 @@
 // header section
 .header_module {
-    position: absolute; // fixed -> absolute
+    position: absolute;
     z-index: 9999;
     top: 0;
     left: 0;
     right: 0;
     height: 80px;
-    // padding-top: 1em;
-    // padding-bottom: 1em;
     background-color: #DADADA;
     border-bottom: 1px solid #F5F7F6;
 }
@@ -71,6 +69,8 @@
 }
 
 .mobile_navbar_content .navbar ul li.menu_item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
     border-bottom: 1px solid white;
     color: gray;
     padding: 10px;
@@ -121,6 +121,10 @@
 //@at-root
 @media (max-width:600px) {
 
+    .section.aboutMe .container .aboutMe_intro {
+        font-size: 1rem;
+    }
+
     .mobile_navbar {
         display: flex;
         height: 79px;
@@ -139,7 +143,7 @@
     }
 
     .section.main .container .main-heading {
-        font-size: 4rem;
+        font-size: 3.8rem;
         font-weight: 550;
     }
 }

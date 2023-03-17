@@ -1,6 +1,7 @@
 import React, { useRef, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from 'react-scroll';
 
 const store = {
     slideIndex: 1,
@@ -22,6 +23,8 @@ function showSlides(n) {
         slides = document.getElementsByClassName("mySlides"),
         dots = document.getElementsByClassName("dot");
 
+
+    console.log(n, store.slideIndex, slides, slides.length, dots)
     if (n > slides.length) { store.slideIndex = 1 }
     if (n < 1) { store.slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
@@ -69,8 +72,13 @@ const Project = () => {
                     <div className='panel 01'>
                         <div className='content'>
                             <div className='img'>
-                                <span className='num'>01</span>
-                                <img alt=''></img>
+                                {/* <span className='num'>01</span> */}
+                                <div className='slideshow_container'>
+                                    <div className="fade" style={{ display: "block" }}>
+                                        {/* 문제 있는 코드 */}
+                                        <img src={require('../../assets/resources/hnc_01.png')} alt="" style={{ border: "10px outset silver" }}></img>
+                                    </div>
+                                </div>
                             </div>
                             <div className='txt'>
                                 <h3>Hacker News Client App</h3>
@@ -91,6 +99,7 @@ const Project = () => {
                                         라우터, 페이징, 자연스러운 화면전환이 가능합니다. */}
                                     </p>
                                     {/* href -> git 서버에 올린 후 변경 필요 */}
+                                    <a href="https://ssongs2.github.io/HNC_Typerscript/" rel="noreferrer" target="_blank" data-text="Demo" className='button_gradient'>Demo</a>
                                     <a href="https://github.com/Ssongs2/HNC_Javascript" rel="noreferrer" target="_blank" data-text="JavaScript" className='button_gradient'>JavaScript</a>
                                     <a href="https://github.com/Ssongs2/HNC_Typerscript" rel="noreferrer" target="_blank" data-text="TypeScript" className='button_gradient'>TypeScript</a>
                                 </div>
@@ -128,7 +137,10 @@ const Project = () => {
                                 <p className='sub'>
                                     Communication Tool without a device at Business Platform
                                     <br />
-                                    @Carrer
+
+                                    <Link to="carrer" spy={true} smooth={true}>
+                                        <a href='' >@Carrer</a>
+                                    </Link>
                                 </p>
                                 <div className='text'>
                                     <p>
@@ -195,7 +207,7 @@ export default Project;
                                     <a className="next" onClick={() => handleSlides(1)}>&#10095;</a>
                                 </div>
                                 <div className="dot_container">
-                                    <span className="dot" onClick={() => handleCurrentSlide(1)}></span>
-                                    <span className="dot" onClick={() => handleCurrentSlide(2)}></span>
-                                    <span className="dot" onClick={() => handleCurrentSlide(3)}></span>
+                                    <span className="" onClick={() => handleCurrentSlide(1)}></span>
+                                    <span className="" onClick={() => handleCurrentSlide(2)}></span>
+                                    <span className="" onClick={() => handleCurrentSlide(3)}></span>
                                 </div> */

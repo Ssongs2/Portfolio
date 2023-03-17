@@ -90,7 +90,7 @@ video {
 html {
     overflow-y: scroll;
     height: 100%;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch; //*
 }
 
 body {
@@ -98,6 +98,10 @@ body {
     overflow-x: hidden;
     overflow-y: visible;
     position: relative;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -146,10 +150,7 @@ table {
     border-spacing: 0;
 }
 
-// body {
-//     background-color: black;
-// }
-
+// Font
 
 @font-face {
     font-family: 'Chosunilbo_myungjo';
@@ -241,6 +242,7 @@ a.button_gradient:hover:after {
 
 @media (max-width:880px) {
     a.button_gradient {
-        padding: 5px 15px;
+        padding: 3px 9px;
+        font-size: 1.2rem;
     }
 }

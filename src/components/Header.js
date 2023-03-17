@@ -8,7 +8,7 @@ function Header() {
         setToggle(!isToggle);
 
         const navbar = document.getElementsByClassName("navbar")[1];
-        console.log("handleToggle", isToggle)
+
         if (isToggle) {
             navbar.style.display = "block";
         } else {

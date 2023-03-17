@@ -28,7 +28,7 @@ function Carrer() {
                             <h3>
                                 <span>Front-end Engineer</span>
                                 <span>
-                                    <a className='inline_link' href='/Portfolio'>&nbsp;@&nbsp;Labor Welfare Corp</a>
+                                    <a className='inline_link' href='https://www.comwel.or.kr/'>&nbsp;@Labor Welfare Corp</a>
                                 </span>
                             </h3>
                             <p className="range">Oct 2021 - June 2022</p>
@@ -47,10 +47,10 @@ function Carrer() {
                             <h3>
                                 <span>Full-Stack Developer</span>
                                 <span>
-                                    <a className='inline_link' href='https://www.wehago.com/landing/en/addition/'>&nbsp;@&nbsp;Douzone</a>
+                                    <a className='inline_link' href='https://www.wehago.com/landing/en/addition/'>&nbsp;@Douzone</a>
                                 </span>
                             </h3>
-                            <p className="range">Oct 2021 - June 2022</p>
+                            <p className="range">Mar 2019 - June 2022</p>
                             <div>
                                 <ul>
                                     <li>Write modern, performant, maintainable code for a diverse array of
