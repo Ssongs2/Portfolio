@@ -53,13 +53,13 @@ const Main = () => {
                     <div className="container">
                         <h1 className="main-heading">{t("M001")}</h1>
                     </div>
-                    <div class="vc-toggle-container">
+                    {/* <div class="vc-toggle-container">
                         <label class="vc-small-switch">
                             <input type="checkbox" class="vc-switch-input" />
                             <span class="vc-switch-label" data-on="Ko" data-off="En"></span>
                             <span class="vc-switch-handle"></span>
                         </label>
-                    </div>
+                    </div> */}
                 </section>
                 <AboutMe />
                 <Carrer />
