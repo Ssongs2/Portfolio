@@ -69,7 +69,48 @@ const Project = () => {
         <section className='section project' ref={sliderRef} id="project">
             <div className='container'>
                 <div className='horizontal_scroll'>
-                    <div className='panel 01'>
+                <div className='panel 01'>
+                        <div className='content'>
+                            <div className='img'>
+                                {/* <span className='num'>01</span> */}
+                                <div className='slideshow_container'>
+                                    <div className="fade" style={{ display: "block" }}>
+                                        {/* 문제 있는 코드 */}
+                                        <img src={require('../../assets/resources/Fiori_01.png')} alt="" style={{ border: "10px outset silver" }}></img>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='txt'>
+                                <h3>관리자 페이지</h3>
+                                <p className='sub'>
+                                    UI5 환경에서 oData를 활용하여 만든 관리자 웹페이지
+                                </p>
+                                <div className='text'>
+                                    <p>
+                                        1. Top3 제품
+                                        <br />
+                                        2. Top3 고객
+                                        <br />
+                                        3. 월별 판매 그래프
+                                        <br />
+                                        <br />
+                                        월별 매출액 데이터를 꺾은선 그래프로 시각화하여 매출 추이를 분석하고 예측할 수 있도록
+                                        지원함으로써, 효율적인 재고 관리와 매출 증대를 위한 전략 수립에 기여했습니다.
+                                        {/* 자바스크립트 버전과 타입스크립트 버전 두 가지로,
+                                        Hacker News API를 이용한 반응형 웹 어플리케이션입니다.
+                                        <br />
+                                        디자인은 Tailwind.css를 활용하였고
+                                        라우터, 페이징, 자연스러운 화면전환이 가능합니다. */}
+                                    </p>
+                                    {/* href -> git 서버에 올린 후 변경 필요 */}
+                                    {/* <a href="https://ssongs2.github.io/HNC_Typerscript/" rel="noreferrer" target="_blank" data-text="Demo" className='button_gradient'>Demo</a>
+                                    <a href="https://github.com/Ssongs2/HNC_Javascript" rel="noreferrer" target="_blank" data-text="JavaScript" className='button_gradient'>JavaScript</a>
+                                    <a href="https://github.com/Ssongs2/HNC_Typerscript" rel="noreferrer" target="_blank" data-text="TypeScript" className='button_gradient'>TypeScript</a> */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='panel 02'>
                         <div className='content'>
                             <div className='img'>
                                 {/* <span className='num'>01</span> */}
@@ -106,7 +147,7 @@ const Project = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='panel 02'>
+                    <div className='panel 03'>
                         <div className='content'>
                             <div className='img'>
                                 {/* <span className='num'>02</span> */}
@@ -188,26 +229,3 @@ const Project = () => {
     )
 }
 export default Project;
-
-// Archaive
-/* <div className="slideshow_container">
-                                    <div className="mySlides fade" style={{ display: "block" }}>
-                                        <img src={sms_1} style={{ border: "10px outset silver" }}></img>
-                                    </div>
-
-                                    <div className="mySlides fade">
-                                        <img src={sms_2} style={{ border: "10px outset silver" }}></img>
-                                    </div>
-
-                                    <div className="mySlides fade">
-                                        <img src={sms_3} style={{ border: "10px outset silver" }}></img>
-                                    </div>
-
-                                    <a className="prev" onClick={() => handleSlides(-1)}>&#10094;</a>
-                                    <a className="next" onClick={() => handleSlides(1)}>&#10095;</a>
-                                </div>
-                                <div className="dot_container">
-                                    <span className="" onClick={() => handleCurrentSlide(1)}></span>
-                                    <span className="" onClick={() => handleCurrentSlide(2)}></span>
-                                    <span className="" onClick={() => handleCurrentSlide(3)}></span>
-                                </div> */
